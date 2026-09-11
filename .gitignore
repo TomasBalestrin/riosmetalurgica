@@ -1,0 +1,8 @@
+# Sistema
+.DS_Store
+Thumbs.db
+
+# Fotos originais (HEIC/JPG brutos) — as versões otimizadas estão em site/assets/img
+fotos lojas/
+fotos produtos/
+parceiros/
