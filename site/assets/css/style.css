@@ -339,9 +339,9 @@ p { margin: 0; text-wrap: pretty; }
 }
 
 .hero h1 {
-  font-size: clamp(2.4rem, 6.4vw, 4.9rem);
+  font-size: clamp(1.9rem, 4.4vw, 3.5rem);
   text-transform: uppercase;
-  line-height: .96;
+  line-height: 1;
 }
 .hero h1 em {
   font-style: normal;
@@ -354,9 +354,9 @@ p { margin: 0; text-wrap: pretty; }
 }
 
 .hero__texto {
-  margin-top: 1.6rem;
-  max-width: 54ch;
-  font-size: clamp(1rem, 1.6vw, 1.18rem);
+  margin-top: 1.4rem;
+  max-width: 52ch;
+  font-size: clamp(1rem, 1.15vw, 1.02rem);
   color: rgba(255, 255, 255, .82);
 }
 
@@ -372,27 +372,30 @@ p { margin: 0; text-wrap: pretty; }
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
   gap: 1px;
-  margin-top: clamp(2.5rem, 6vh, 4rem);
+  margin-top: clamp(1.75rem, 4vh, 2.5rem);
   background: rgba(255, 255, 255, .13);
   border: 1px solid rgba(255, 255, 255, .13);
 }
 .hero__dado {
   background: rgba(16, 18, 20, .72);
-  padding: 1.2rem 1.35rem;
+  padding: .95rem 1.1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
 }
 .hero__dado b {
   display: block;
   font-family: var(--display);
-  font-size: clamp(1.6rem, 3.4vw, 2.2rem);
+  font-size: clamp(1.05rem, 1.9vw, 1.45rem);
   font-weight: 700;
   color: var(--branco);
-  line-height: 1;
+  line-height: 1.1;
 }
 .hero__dado span {
   display: block;
-  margin-top: .45rem;
-  font-size: .74rem;
-  letter-spacing: .13em;
+  margin-top: .35rem;
+  font-size: .66rem;
+  letter-spacing: .11em;
   text-transform: uppercase;
   color: var(--aco-200);
 }
