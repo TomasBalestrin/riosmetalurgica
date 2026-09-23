@@ -639,16 +639,17 @@ p { margin: 0; text-wrap: pretty; }
 
 .linhas {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-  gap: 1px;
-  background: var(--aco-200);
-  border: 1px solid var(--aco-200);
+  /* dois segmentos: colunas iguais, sem esticar em telas largas */
+  grid-template-columns: repeat(auto-fit, minmax(260px, 440px));
+  justify-content: start;
   margin-top: 3rem;
 }
 .linha {
   background: var(--branco);
   padding: 2.2rem 2rem;
+  border: 1px solid var(--aco-200);
 }
+.linha + .linha { border-left: 0; }
 .linha__icone {
   width: 54px; height: 54px;
   display: grid; place-items: center;

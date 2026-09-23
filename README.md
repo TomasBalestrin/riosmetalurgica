@@ -1,7 +1,7 @@
 # Metalúrgica Rios
 
-Site institucional da Metalúrgica Rios — bancas expositoras para hortifruti,
-suportes tipo mão francesa e cantoneiras.
+Site institucional da Metalúrgica Rios — bancas expositoras e gôndolas para o
+setor de hortifruti de supermercados e lojas de FLV.
 
 **Site:** [metalurgicarios.com.br](https://metalurgicarios.com.br/)
 
