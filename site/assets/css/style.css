@@ -565,6 +565,11 @@ p { margin: 0; text-wrap: pretty; }
   aspect-ratio: 4 / 3;
   overflow: hidden;
   background: var(--aco-700);
+  cursor: zoom-in;
+}
+.produto__foto:focus-visible {
+  outline: 3px solid var(--azul-claro);
+  outline-offset: -3px;
 }
 .produto__foto img {
   width: 100%; height: 100%;

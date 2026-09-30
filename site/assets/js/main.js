@@ -77,6 +77,20 @@
     });
   });
 
+  /* fotos dos cards de produto: mesmo lightbox, sem interferir no link
+     "Orçar este modelo" nem no filtro, que ficam fora da .produto__foto */
+  document.querySelectorAll('.produto__foto[data-full]').forEach(function (foto) {
+    foto.addEventListener('click', function () {
+      abrirLightbox(foto.dataset.full, foto.dataset.legenda);
+    });
+    foto.addEventListener('keydown', function (e) {
+      if (e.key === 'Enter' || e.key === ' ') {
+        e.preventDefault();
+        abrirLightbox(foto.dataset.full, foto.dataset.legenda);
+      }
+    });
+  });
+
   lightboxFechar.addEventListener('click', fecharLightbox);
   lightbox.addEventListener('click', function (e) {
     if (e.target === lightbox) fecharLightbox();
